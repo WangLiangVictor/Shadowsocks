@@ -1,0 +1,13 @@
+ssh-keygen -t rsa -C "wangl_victor@qq.com"
+复制key到github上创建ssh key
+ssh -T git@github.com
+git config --global user.name "wangliangno1"
+git config --global user.email wangl_victor@qq.com
+git remote rm origin
+git remote add origin git@github.com:WangLiangVictor/HelloWorld.git
+git add .
+git commit -m "随意写"
+git push origin master
+git pull origin master
+
+wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
